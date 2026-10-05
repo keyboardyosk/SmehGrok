@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Cinzel", "Times New Roman", serif;
+  --font-sans: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --color-bg: #0c0b0a;
+  --color-bg-elevated: #141210;
+  --color-bg-subtle: #1c1916;
+  --color-fg: #e8e2d6;
+  --color-muted: #9a9286;
+  --color-subtle: #6f6960;
+  --color-border: color-mix(in oklab, #e8e2d6 12%, transparent);
+  --color-border-strong: color-mix(in oklab, #e8e2d6 22%, transparent);
+  --color-accent: #c8c4bb;
+  --color-accent-fg: #0c0b0a;
+  --color-danger: #8a3a2a;
+  --color-warn: #a97848;
+  --color-ok: #6d7a62;
+
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 28px;
+
+  --shadow-panel: 0 18px 40px color-mix(in oklab, #000 45%, transparent);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  html,
+  body,
+  #app {
+    min-height: 100dvh;
+    background: var(--color-bg);
+    color: var(--color-fg);
+  }
+  body {
+    font-family: var(--font-sans);
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+    font-family: var(--font-display);
+  }
+  p {
+    text-wrap: pretty;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.hud-num {
+  font-variant-numeric: tabular-nums;
+}
+
+.scene-vignette {
+  background:
+    linear-gradient(180deg, color-mix(in oklab, var(--color-bg) 72%, transparent) 0%, transparent 28%, transparent 48%, color-mix(in oklab, var(--color-bg) 88%, transparent) 100%),
+    linear-gradient(90deg, color-mix(in oklab, var(--color-bg) 55%, transparent), transparent 18%, transparent 82%, color-mix(in oklab, var(--color-bg) 55%, transparent));
+}

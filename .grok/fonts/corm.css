@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/l/font?kit=co3smX5slCNuHLi8bLeY9MK7whWMhyjYrGFEsdtdc62E6zd5wDDOj8EcCSozgCksHtjOz0ZyRT6UeFYNE3lazksmgdn2xhhQdrxQW95Tiw&skey=e666f2218a05acfc&v=v21) format('truetype');
+}
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/l/font?kit=co3umX5slCNuHLi8bLeY9MK7whWMhyjypVO7abI26QOD_s06GnPcqtPpuyo0gCAsHNjPz3hyRj6VeFANBHldzkImg9n3xyZQdbxRW9g&skey=a863d1376a24bd7a&v=v21) format('truetype');
+}
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/l/font?kit=co3umX5slCNuHLi8bLeY9MK7whWMhyjypVO7abI26QOD_iE9GnPcqtPpuyo0gCAsHNjPz3hyRj6VeFANBHldzkImg9n3xyZQdbxRW9g&skey=a863d1376a24bd7a&v=v21) format('truetype');
+}
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/l/font?kit=co3umX5slCNuHLi8bLeY9MK7whWMhyjypVO7abI26QOD_hg9GnPcqtPpuyo0gCAsHNjPz3hyRj6VeFANBHldzkImg9n3xyZQdbxRW9g&skey=a863d1376a24bd7a&v=v21) format('truetype');
+}
